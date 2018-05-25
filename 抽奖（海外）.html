@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="renderer" content="webkit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="description" content="Plane UI" />
+    <meta name="keywords" content="Plane UI" />
+    <meta name="apple-mobile-web-app-title" content="Plane UI" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <!-- for iOS icons -->
+    <link rel="apple-touch-icon-precomposed" href="../dist/icons/icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../dist/icons/icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../dist/icons/icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../dist/icons/icon-120x120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../dist/icons/icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="../dist/icons/icon-180x180.png">
+
+    <meta name="google" value="notranslate" />
+
+    <!-- for Android 5 -->
+    <meta name="theme-color" content="#008FE2" />
+
+    <!-- Windows 8 metro color -->
+    <meta name="msapplication-TileColor" content="#008FE2" />
+
+    <!-- Windows 8 metro icon -->
+    <meta name="msapplication-TileImage" content="favicon.png" />
+
+    <title>Test</title>
+    <link rel="stylesheet" type="text/css" href="planeui.min.css" />
+    <link rel="stylesheet" type="text/css" href="index-choujiang.css" />
+</head>
+
+<body>
+    <!-- <div class="copyright">
+        <p>Copyright © 2017 福建农大计信院e修哥 All Rights Reserved. Powered by Plane UI.
+            <a href="https://github.com/pandao/planeui" class="pui-link" target="_blank"></a>
+        </p>
+    </div> -->
+    <!--[if lte IE 9]>
+        <div class="pui-layout pui-browsehappy">
+            <a href="javascript:;" class="pui-close" onclick="document.body.removeChild(this.parentNode);"></a>
+            <p>您正在使用 <strong class="pui-text-yellow pui-text-xl">过时</strong> 的非现代浏览器，<strong class="pui-text-success pui-text-xl">91.23%</strong> 的人选择 <a href="http://browsehappy.com/" target="_blank" class="pui-text-green-400 pui-text-xl"><strong>升级浏览器</strong></a>，获得了更好、更安全的浏览体验！</p>
+        </div>
+        <![endif]-->
+    <div class="pui-layout main">
+        <!-- <img src="images/jy.png" class="pui-img-lefttop"> -->
+
+        <div class="pui-grid pui-layout-fixed-1200 main-con">
+            <div class="temp">
+                <!-- <div id="text5" class="pui-row features">
+                    <h1 class="pui-text-light-200 pui-text-num pui-text-center pui-text-xxxxxl">
+                        第一次抽奖
+                    </h1>
+                </div> -->
+                <div class="pui-row features">
+                    <div class="pui-text-center" >
+                        <h1 id="text1" class="pui-text-light-200 pui-text-num-long">
+                        </h1>
+                    </div>
+                </div>
+                <!-- <div class="pui-row pui-text-center">
+                    <a href="javascript:;" id="btn1" class="pui-btn pui-btn-success pui-btn-large pui-text-shadow">开始</a>
+                    <a href="javascript:;" id="btn1e" class="pui-btn pui-btn-success pui-btn-large pui-text-shadow">抽取</a>
+                </div> -->
+            </div>
+        </div>
+        
+    </div>
+    </div>
+    <!-- <footer class="pui-center pui-layout-fixed pui-layout-fixed-1200">
+                <hr />
+                <div class="copyright">
+                    <span class="pui-right pui-xs-show"><a href="#top" class="pui-link">TOP</a></span>
+                    <p>Copyright &copy; 2014-2015 <a href="https://github.com/pandao/planeui" class="pui-link" title="Plane UI" target="_blank">Plane UI</a> All Rights Reserved.</p>
+                    <p>Powered by <a href="https://github.com/pandao/planeui" class="pui-link" target="_blank">Plane UI</a>, <a href="https://github.com/pandao/planeui/blob/master/LICENSE" target="_blank" class="pui-link">MIT</a> License.<small class="pui-right">代码如诗。</small></p>
+                </div>
+            </footer> -->
+    </div>
+    <a href="#top" class="fa fa-arrow-circle-up fa-3x pui-text-blue-400" id="go-to-top"></a>
+    <!--<script src="http://192.168.1.6:8080/target/target-script-min.js#anonymous"></script>-->
+
+    <!--[if (gte IE 9) | !(IE)]><!-->
+    <script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+    <script src="member.js" type="text/javascript"></script>
+    <script src="choujiang_zhuanye.js" type="text/javascript"></script>
+
+
+    <!--<![endif]-->
+
+    <!--[if lt IE 9]>
+<script type="text/javascript" src="./app/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="./../dist/js/planeui.patch.ie8.min.js"></script>
+<![endif]-->
+
+    <!--[if lt IE 10]>
+<script type="text/javascript" src="./../dist/js/planeui.patch.ie9.min.js"></script>
+<![endif]-->
+    <script type="text/javascript" src="planeui.min.js"></script>
+    <script>
+        $(function () {
+            var header = $(".page-header");
+            var goToTop = $("#go-to-top");
+
+            $('a[href*="#"]').scrollTo();
+
+            $(window).scroll(function () {
+                var top = $(this).scrollTop();
+                var heading = $(".banner-con h1");
+                var title1 = heading.eq(1);
+                var title2 = heading.eq(2);
+                var title2 = heading.eq(2);
+                var sloganEn = $(".slogan-en");
+                if (title1.is(":in-viewport")) {
+                    title1.addClass("pui-animation-expand-in");
+                } else {
+                    title1.removeClass("pui-animation-expand-in");
+                }
+
+                if (title2.is(":in-viewport")) {
+                    title2.addClass("pui-animation-slide-left");
+                } else {
+                    title2.removeClass("pui-animation-slide-left");
+                }
+
+                if (sloganEn.is(":in-viewport")) {
+                    sloganEn.addClass("pui-animation-slide-right");
+                } else {
+                    sloganEn.removeClass("pui-animation-slide-right");
+                }
+
+                if (top > 300) {
+                    header.css({
+                        position: "fixed",
+                        top: 0,
+                        left: 0,
+                        zIndex: 10000,
+                        boxShadow: "0 0 5px rgba(0, 0, 0, .5)"
+                    });
+                } else {
+                    header.css({
+                        position: "static",
+                        boxShadow: "none"
+                    });
+                }
+
+                if (top > 300) {
+                    goToTop.fadeIn();
+                } else {
+                    goToTop.fadeOut();
+                }
+            });
+
+            function openMenu() {
+
+                if (!$.responsive.xs() && !$.responsive.sm()) {
+                    return;
+                }
+
+                var menu = $(".page-header .pui-menu-simple");
+
+                menu.toggleClass("pui-right pui-pos-fixed open");
+                header.toggleClass("main-color");
+
+                $(".page-header .pui-menu-simple.open").bind("mouseleave", openMenu);
+            }
+
+            $(".page-header .fa-list").bind("click", openMenu);
+        });
+    </script>
+</body>
+
+</html>
